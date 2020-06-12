@@ -9,6 +9,10 @@
     line-height: 30px;
     color: $color-small;
     text-transform: capitalize;
+
+    @include desktop {
+      font-size: 16px;
+    }
   }
 
   &__tittle {
@@ -21,6 +25,10 @@
 
     @include tablet {
       font-size: 26px;
+    }
+
+    @include desktop {
+      font-size: 32px;
     }
   }
 
@@ -45,6 +53,14 @@
     text-align: center;
     line-height: 45px;
     margin-bottom: 30px;
+
+    @include tablet {
+      width: 91px;
+    }
+
+    @include desktop {
+      width: 160px;
+    }
 
     a {
       font-family: $font-family-main;
