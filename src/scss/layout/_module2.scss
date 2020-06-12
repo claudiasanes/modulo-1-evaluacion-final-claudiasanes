@@ -2,24 +2,33 @@
   background-color: $color-terciary;
 
   &__container {
+    padding-top: 15px;
+    padding-bottom: 30px;
     h2 {
       font-family: $font-family-tittle;
       font-size: 24px;
       font-weight: 30px;
       text-align: center;
+      padding-top: 15px;
+      padding-bottom: 30px;
+    }
+
+    .item {
+      padding-top: 15px;
+      padding-bottom: 30px;
     }
 
     h3 {
       font-family: $font-family-tittle;
       font-size: 18px;
-      font-weight: 30px;
+      line-height: 30px;
       text-align: center;
     }
 
     p {
       font-family: $font-family-main;
       font-size: 18px;
-      font-weight: 30px;
+      line-height: 30px;
       text-align: center;
     }
 
@@ -31,7 +40,8 @@
       border-radius: 50px;
       text-align: center;
       line-height: 45px;
-      margin: auto;
+      margin: 30px auto;
+
       a {
         font-family: $font-family-main;
         font-size: 20px;

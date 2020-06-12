@@ -1,4 +1,8 @@
 .module-1 {
+  .wrapper {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
   &__small {
     font-family: $font-family-main;
     font-size: 14px;
@@ -13,6 +17,7 @@
     line-height: 30px;
     color: $color-dark;
     text-transform: capitalize;
+    padding-bottom: 15px;
   }
 
   &__text {
@@ -20,6 +25,7 @@
     font-size: 18px;
     line-height: 30px;
     color: $color-darkgrey;
+    padding-bottom: 30px;
   }
 
   .btn-go {
@@ -30,6 +36,7 @@
     border-radius: 50px;
     text-align: center;
     line-height: 45px;
+    margin-bottom: 30px;
 
     a {
       font-family: $font-family-main;
