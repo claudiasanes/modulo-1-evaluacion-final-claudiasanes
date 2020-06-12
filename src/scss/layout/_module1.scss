@@ -53,6 +53,11 @@
     text-align: center;
     line-height: 45px;
     margin-bottom: 30px;
+    transition: color ease-in-out 0.5s;
+
+    &:hover {
+      background-color: transparentize($color-btn, 0.8);
+    }
 
     @include tablet {
       width: 91px;
