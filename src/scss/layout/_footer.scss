@@ -21,6 +21,35 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    &:hover {
+      animation-duration: 2s;
+      animation-name: button;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes button {
+      20% {
+        border-radius: 0 0 0 0;
+      }
+
+      40% {
+        border-radius: 0 0 50% 0;
+        background-color: $color-terciary;
+      }
+
+      60% {
+        border-radius: 0 0 0 50%;
+        background-color: $color-small;
+      }
+      80% {
+        border-radius: 0 50% 0 0;
+        background-color: $color-secondary;
+      }
+      100% {
+        border-radius: 50% 0 0 0;
+        background-color: $color-primary;
+      }
+    }
   }
 
   &__container {
