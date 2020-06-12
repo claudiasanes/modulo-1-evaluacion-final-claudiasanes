@@ -10,4 +10,13 @@ a {
 .wrapper {
   padding: 0px 15px;
   margin: auto;
+
+  @include tablet {
+    padding: 0px 40px;
+    max-width: 690px;
+  }
+  @include desktop {
+    padding: 0px 80px;
+    max-width: 730px;
+  }
 }
