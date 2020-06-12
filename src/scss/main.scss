@@ -1,8 +1,16 @@
-@import "core/variables";
+/* CORE */
+
 @import "core/reset";
+@import "core/_mixins";
+@import "core/variables";
+
+/* LAYOUT */
 @import "layout/page";
-@import "layout/hero";
+@import "layout/header";
 @import "layout/module1";
 @import "layout/module2";
 @import "layout/footer";
+
+/* PAGES */
+
 @import "pages/index";

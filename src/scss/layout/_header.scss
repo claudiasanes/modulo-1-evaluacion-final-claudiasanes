@@ -1,0 +1,72 @@
+.header {
+  .btn-top {
+    height: 44px;
+    width: 44px;
+    position: fixed;
+    top: 0px;
+    background-color: $color-secondary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    a {
+      padding: 16px;
+    }
+  }
+
+  .hero {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.5) 0,
+        rgba(#000000, 0.25) 100%
+      ),
+      url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+
+    &__info {
+      position: absolute;
+      bottom: 0px;
+      color: $color-light;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: flex-end;
+      text-align: center;
+
+      &--tittle {
+        font-family: $font-family-tittle;
+        font-size: 45px;
+        line-height: 55px;
+        text-transform: uppercase;
+        display: block;
+        padding-bottom: 10px;
+      }
+
+      &--text {
+        font-family: $font-family-main;
+        font-size: 16px;
+        padding-bottom: 45px;
+      }
+      .btn-scroll-down a {
+        height: 45px;
+        width: 45px;
+        background-color: $color-light;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 45px;
+        margin-bottom: 53px;
+        img {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
