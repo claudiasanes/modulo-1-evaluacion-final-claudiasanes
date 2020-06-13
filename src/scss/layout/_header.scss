@@ -6,14 +6,8 @@
     top: 0px;
     background-color: $color-secondary;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-
-    a {
-      padding: 16px;
-    }
   }
 
   .hero {
@@ -22,12 +16,16 @@
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0.5) 0,
-        rgba(#000000, 0.25) 100%
+        rgba($color-dark, 0.25) 100%
       ),
       url("../images/cover.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+
+    .wrapper {
+      max-width: 1200px;
+    }
 
     &__info {
       height: 100%;
@@ -45,10 +43,9 @@
         line-height: 55px;
         text-transform: uppercase;
         padding-bottom: 10px;
-        text-align: center;
 
-        span {
-          display: inline-block;
+        .word {
+          display: block;
         }
 
         @include tablet {
@@ -70,7 +67,7 @@
           font-size: 24px;
         }
       }
-      .btn-scroll-down a {
+      .btn-scroll-down {
         height: 45px;
         width: 45px;
         background-color: $color-light;
@@ -78,9 +75,6 @@
         display: inline-block;
         line-height: 45px;
         margin-bottom: 53px;
-        img {
-          text-align: center;
-        }
       }
     }
   }
