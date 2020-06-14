@@ -1,8 +1,4 @@
 .module-1 {
-  .wrapper {
-    padding-top: 30px;
-    padding-bottom: 15px;
-  }
   &__small {
     font-family: $font-family-main;
     font-size: 1.4rem;
@@ -52,7 +48,7 @@
     border-radius: 50px;
     text-align: center;
     line-height: 45px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     transition: all ease-in-out 0.5s;
 
     &:hover {
@@ -62,10 +58,12 @@
 
     @include tablet {
       width: 91px;
+      margin-bottom: 30px;
     }
 
     @include desktop {
       width: 160px;
+      margin-bottom: 0px;
     }
 
     .go {
