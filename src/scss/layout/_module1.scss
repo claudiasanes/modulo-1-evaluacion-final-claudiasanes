@@ -5,7 +5,7 @@
   }
   &__small {
     font-family: $font-family-main;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 30px;
     color: $color-small;
     text-transform: capitalize;
@@ -17,30 +17,30 @@
 
   &__tittle {
     font-family: $font-family-tittle;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 30px;
     color: $color-dark;
     text-transform: capitalize;
     padding-bottom: 15px;
 
     @include tablet {
-      font-size: 26px;
+      font-size: 2.6rem;
     }
 
     @include desktop {
-      font-size: 32px;
+      font-size: 3.2rem;
     }
   }
 
   &__text {
     font-family: $font-family-main;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 30px;
     color: $color-darkgrey;
     padding-bottom: 30px;
 
     @include tablet {
-      font-size: 20px;
+      font-size: 2rem;
     }
   }
 
@@ -53,10 +53,11 @@
     text-align: center;
     line-height: 45px;
     margin-bottom: 30px;
-    transition: color ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
 
     &:hover {
       background-color: transparentize($color-btn, 0.8);
+      transform: scale(0.9);
     }
 
     @include tablet {
@@ -69,7 +70,7 @@
 
     .go {
       font-family: $font-family-main;
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 500;
       color: $color-btn;
     }
