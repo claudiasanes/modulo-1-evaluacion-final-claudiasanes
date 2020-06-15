@@ -8,6 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: color ease-in-out 0.4s;
+
+    &:hover {
+      background-color: darken($color-secondary, 10%);
+    }
   }
 
   .hero {
@@ -100,6 +105,35 @@
         }
         @include desktop {
           margin-bottom: 0px;
+        }
+        &:hover {
+          animation-duration: 1.5s;
+          animation-name: button;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+        @keyframes button {
+          0% {
+            transform: scale(1, 1) translateY(0);
+          }
+          5% {
+            transform: scale(1.1, 0.9) translateY(0);
+          }
+          30% {
+            transform: scale(0.9, 1.1) translateY(-50px);
+          }
+          50% {
+            transform: scale(1.1, 0.9) translateY(0);
+          }
+          60% {
+            transform: scale(1.05, 0.95) translateY(-15px);
+          }
+          65% {
+            transform: scale(1, 1) translateY(0);
+          }
+          100% {
+            transform: scale(1, 1) translateY(0);
+          }
         }
       }
     }

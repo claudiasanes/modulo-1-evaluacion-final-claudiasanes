@@ -22,32 +22,32 @@
     box-shadow: 0 2px 4px 0 $color-dark;
 
     &:hover {
-      animation-duration: 2s;
+      animation-duration: 1.5s;
       animation-name: button;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
     }
     @keyframes button {
-      20% {
-        border-radius: 0 0 0 0;
+      0% {
+        transform: scale(1, 1) translateY(0);
       }
-
-      40% {
-        border-radius: 0 0 50% 0;
-        background-color: $color-terciary;
+      5% {
+        transform: scale(1.1, 0.9) translateY(0);
       }
-
+      30% {
+        transform: scale(0.9, 1.1) translateY(-50px);
+      }
+      50% {
+        transform: scale(1.1, 0.9) translateY(0);
+      }
       60% {
-        border-radius: 0 0 0 50%;
-        background-color: $color-small;
+        transform: scale(1.05, 0.95) translateY(-15px);
       }
-      80% {
-        border-radius: 0 50% 0 0;
-        background-color: $color-secondary;
+      65% {
+        transform: scale(1, 1) translateY(0);
       }
       100% {
-        border-radius: 50% 0 0 0;
-        background-color: $color-primary;
+        transform: scale(1, 1) translateY(0);
       }
     }
   }
@@ -94,6 +94,11 @@
 
     .menu-item {
       color: $color-light;
+      transition: color ease-in-out 0.2s;
+
+      &:hover {
+        color: $color-btn;
+      }
     }
 
     &--copyright {
