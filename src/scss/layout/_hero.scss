@@ -1,0 +1,123 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0,
+      rgba($color-dark, 0.25) 100%
+    ),
+    url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  animation-name: hero-img;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+
+  @keyframes hero-img {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .wrapper {
+    max-width: 1200px;
+  }
+
+  &__info {
+    height: 100%;
+    color: $color-light;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+
+    &--tittle {
+      font-family: $font-family-tittle;
+      font-size: 4.5rem;
+      line-height: 55px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+
+      .word {
+        display: block;
+      }
+
+      @include tablet {
+        font-size: 8rem;
+        line-height: 106px;
+      }
+      @include desktop {
+        font-size: 100px;
+        line-height: 132px;
+      }
+    }
+
+    &--text {
+      font-family: $font-family-main;
+      font-size: 1.6rem;
+      padding-bottom: 45px;
+
+      @include tablet {
+        font-size: 2.4rem;
+        padding-bottom: 30px;
+      }
+    }
+    .btn-scroll-down {
+      height: 45px;
+      width: 45px;
+      background-color: $color-light;
+      border-radius: 50%;
+      display: inline-block;
+      line-height: 45px;
+      margin-bottom: 20px;
+
+      @include tablet {
+        margin-bottom: 15px;
+      }
+      @include desktop {
+        margin-bottom: 0px;
+      }
+      &:hover {
+        animation-duration: 1.5s;
+        animation-name: button;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes button {
+        0% {
+          transform: scale(1, 1) translateY(0);
+        }
+        5% {
+          transform: scale(1.1, 0.9) translateY(0);
+        }
+        30% {
+          transform: scale(0.9, 1.1) translateY(-50px);
+        }
+        50% {
+          transform: scale(1.1, 0.9) translateY(0);
+        }
+        60% {
+          transform: scale(1.05, 0.95) translateY(-15px);
+        }
+        65% {
+          transform: scale(1, 1) translateY(0);
+        }
+        100% {
+          transform: scale(1, 1) translateY(0);
+        }
+      }
+    }
+  }
+}
